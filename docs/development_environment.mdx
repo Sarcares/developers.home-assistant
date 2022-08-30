@@ -38,6 +38,18 @@ The easiest way to get started with development is to use Visual Studio Code wit
 
 In the future, if you want to get back to your development environment: open Visual Studio Code, click on the "Remote Explorer" button in the sidebar, select "Containers" at the top of the sidebar.
 
+**Keep the repository updated**
+
+If you want to keep your container updated it is necessary to:
+
+1. In your web browswer, go inside the forked reposiroty (e.g., https://github.com/your_username/core)
+2. Click on "Synk fork" and then press the "Update branch" button
+3. In Visual Studio Code, when your devcontainer is running, check that Home Assistant is stopped
+4. Go inside the folder `/workspaces/core`
+5. Execute `git pull`
+
+*Beware*: to update the repository you should not changed any "core" file.
+
 ### Tasks
 
 The devcontainer comes with some useful tasks to help you with development, you can start these tasks by opening the command palette and select `Tasks: Run Task` then select the task you want to run.
